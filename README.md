@@ -77,7 +77,7 @@ PythonBasics/
 
 ---
 
-## 📈 SEO Keywords
+## Keywords
 
 Python Basics, Learn Python, Python Tutorial for Beginners, Python Programming Guide, Python Syntax Tutorial, Beginner Python Course
 
