@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("theme");
+            if (saved) {
+                document.documentElement.setAttribute("data-theme", saved);
+            } else {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+    <header>
+        <div class="header-left">
+            <button class="menu-toggle" onclick="toggleSidebar()"><i data-lucide="menu"></i></button>
+
+            <a href="index.html" class="logo-container">
+                <svg width="28" height="28" viewBox="0 0 448 512">
+                    <path style="fill:var(--python-blue)"
+                        d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-67.8 67.8H172.7c-5.8 0-10.6 4.8-10.6 10.6v80.1c0 31.1 23.2 54 53.4 54H270c5.8 0 10.6-4.8 10.6-10.6V398c0-14.1 11.4-25.5 25.5-25.5h67.8c31.1 0 54-23.2 54-53.4V226.2c.1-8.5-1.1-17.1-3.1-25.7zM299.7 414.7c-11.2 0-20.2-9-20.2-20.2s9-20.2 20.2-20.2 20.2 9 20.2 20.2-9 20.2-20.2 20.2z" />
+                    <path style="fill:var(--python-yellow)"
+                        d="M8.2 311.5c7.7 30.9 22.3 54.2 53.4 54.2h40.1v-47.4c0-36.8 31.2-67.8 67.8-67.8h105.7c5.8 0 10.6-4.8 10.6-10.6v-80.1c0-31.1-23.2-54-53.4-54H178c-5.8 0-10.6 4.8-10.6 10.6V114c0 14.1-11.4 25.5-25.5 25.5H74.1c-31.1 0-54 23.2-54 53.4v93c-.1 8.5 1.1 17.1 3.1 25.6zM148.3 97.3c11.2 0 20.2 9 20.2 20.2s-9 20.2-20.2 20.2-20.2-9-20.2-20.2 9-20.2 20.2-20.2z" />
+                </svg>
+                <span>PYTHON BASICS</span>
+            </a>
+        </div>
+        <button class="theme-toggle-btn" onclick="toggleTheme()">
+            <i id="theme-icon" data-lucide="moon"></i>
+        </button>
+    </header>
+
+    <div class="wrapper">
+        <aside id="sidebar"></aside>
+
+        <!-- Main content Start -->
+
+        <main id="main-content">
+            <div class="content-container">
+                <div id="page-content">
+                    <h1 id="topic-title">Python introduction</h1>
+                    <p class="sub-text">Learning Python step-by-step.</p>
+                    <hr class="divider">
+                    <div id="topic-body">
+
+                        <p>
+                        <h1>What is Python?</h1>
+                        Python is a high-level,
+                        interpreted programming language created by Guido van Rossum and first released in 1991.<br />
+                        <br>
+                        It is known for:
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="margin-left:40px;">Easy-to-read syntax</li>
+                            <li style="margin-left:40px;">Versatility</li>
+                            <li style="margin-left:40px;">Large standard library</li>
+                            <li style="margin-left:40px;">Strong community support</li>
+                        </ul>
+                        <br>
+                        Python supports multiple programming styles such as:
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="margin-left:40px;">Procedural programming</li>
+                            <li style="margin-left:40px;">Object-oriented programming</li>
+                            <li style="margin-left:40px;">Functional programming</li>
+
+                        </ul>
+                        <br>
+                        <h1>What Can Python Do?</h1>
+                        <br>Python can be used for many types of applications:
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="margin-left:40px;">Web development (e.g., Django, Flask)</li>
+                            <li style="margin-left:40px;">Data analysis and visualization (e.g., Pandas, Matplotlib)
+                            </li>
+                            <li style="margin-left:40px;">Machine learning and AI (e.g., TensorFlow, Scikit-learn)</li>
+                            <li style="margin-left:40px;">Automation and scripting</li>
+                            <li style="margin-left:40px;">Game development (e.g., Pygame)</li>
+                            <li style="margin-left:40px;">Desktop applications</li>
+                            <li style="margin-left:40px;">Software development</li>
+                            <li style="margin-left:40px;">Cybersecurity tools</li>
+                        </ul>
+                        <br>
+                        <h1>Why Python?</h1>
+                        <br>Python is a great choice for beginners and experienced developers alike because of its:
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="margin-left:40px;">Easy to learn</li>
+                            <li style="margin-left:40px;">Simple and readable syntax</li>
+                            <li style="margin-left:40px;">Large and active community</li>
+                            <li style="margin-left:40px;">Extensive libraries and frameworks</li>
+                            <li style="margin-left:40px;">Cross-platform compatibility (Windows, macOS, Linux)</li>
+                            <li style="margin-left:40px;">Strong support for integration with other languages and tools
+                            </li>
+                            <li style="margin-left:40px;">Used by big companies like Google, Netflix, and Instagram</li>
+                        </ul>
+                        <br><br>
+                        <h1>Python Syntax Compared to Other Programming Languages</h1>
+                        <br><br>
+                        Python syntax is <b> simpler and shorter </b> than many languages like Java or C++.
+                        <br><br>
+                        For example, to print "Hello, World!"
+                        <br><br>
+                        <h3>Python Code</h3>
+                        <pre><code id=\"codeBlock\">
+# Welcome to Python
+print("Hello World!")
+                        </code></pre>
+                        <h3>C++ Code</h3>
+                        <pre><code id=\"codeBlock\">
+// Welcome to Python
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+                        </code></pre>
+                        <h3>Java Code</h3>
+                        <pre><code id=\"codeBlock\">
+// Welcome to Python
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+                        </code></pre>
+                    <h2>Key Differences</h2>
+                        <ul>
+                            <li style="margin-left:40px;">Python uses indentation to define code blocks, while C++ and Java use curly braces.</li>
+                            <li style="margin-left:40px;">Python does not require a main function, while C++ and Java do.</li>
+                            <li style="margin-left:40px;">Python has a simpler syntax for printing output compared to C++ and Java.</li>
+                        </ul>
+
+                        <br><br>
+                        Python's simplicity and readability make it an excellent choice for beginners and a powerful tool for experienced developers.
+
+                    
+                    </p>
+
+                        
+
+                    </div>
+                </div>
+
+                <div id="nav-buttons" class="page-navigation"></div>
+            </div>
+        </main>
+        <!-- Main content End -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
