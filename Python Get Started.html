@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+(function () {
+    const saved = localStorage.getItem("theme");
+    if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+    }
+})();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <header>
+        <div class="header-left">
+            <button class="menu-toggle" onclick="toggleSidebar()"><i data-lucide="menu"></i></button>
+            
+            <a href="index.html" class="logo-container">
+                <svg width="28" height="28" viewBox="0 0 448 512">
+                    <path style="fill:var(--python-blue)" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-67.8 67.8H172.7c-5.8 0-10.6 4.8-10.6 10.6v80.1c0 31.1 23.2 54 53.4 54H270c5.8 0 10.6-4.8 10.6-10.6V398c0-14.1 11.4-25.5 25.5-25.5h67.8c31.1 0 54-23.2 54-53.4V226.2c.1-8.5-1.1-17.1-3.1-25.7zM299.7 414.7c-11.2 0-20.2-9-20.2-20.2s9-20.2 20.2-20.2 20.2 9 20.2 20.2-9 20.2-20.2 20.2z"/>
+                    <path style="fill:var(--python-yellow)" d="M8.2 311.5c7.7 30.9 22.3 54.2 53.4 54.2h40.1v-47.4c0-36.8 31.2-67.8 67.8-67.8h105.7c5.8 0 10.6-4.8 10.6-10.6v-80.1c0-31.1-23.2-54-53.4-54H178c-5.8 0-10.6 4.8-10.6 10.6V114c0 14.1-11.4 25.5-25.5 25.5H74.1c-31.1 0-54 23.2-54 53.4v93c-.1 8.5 1.1 17.1 3.1 25.6zM148.3 97.3c11.2 0 20.2 9 20.2 20.2s-9 20.2-20.2 20.2-20.2-9-20.2-20.2 9-20.2 20.2-20.2z"/>
+                </svg>
+                <span>PYTHON  BASICS</span>
+            </a>
+        </div>
+        <button class="theme-toggle-btn" onclick="toggleTheme()">
+            <i id="theme-icon" data-lucide="moon"></i>
+        </button>
+    </header>
+
+    <div class="wrapper">
+        <aside id="sidebar"></aside>
+
+        <main id="main-content">
+            <div class="content-container">
+                <div id="page-content">
+                    <h1 id="topic-title">Python Get Started</h1>
+                    <p class="sub-text">Learning Python step-by-step.</p>
+                    <hr class="divider">
+                    <div id="topic-body">
+                        
+    <p>
+       <h1>Introduction to Python</h1>
+         Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability and simplicity, making it an excellent choice for beginners and experienced developers alike. Python's syntax allows programmers to express concepts in fewer lines of code compared to languages like C++ or Java, which can lead to faster development and easier maintenance.
+         <br><br>
+         Python is known for its simple syntax, which makes it easy for beginners to learn and use.
+            <br><br>
+            It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+            <br><br>
+            Python has a large standard library that provides tools and modules for various tasks, such as file
+            handling, regular expressions, and web development.
+            <br><br>
+            It is widely used in various fields, including web development, data analysis, artificial intelligence, scientific computing, and automation.
+            <br><br>
+            Python has a large and active community that contributes to its development and provides support through forums, tutorials, and libraries.
+            <br><br>
+            Python is an open-source language, which means that it is freely available for anyone to use and modify.
+            <h1><br><br>Python Example</h1>
+                Here is a simple example of a Python program that prints "Hello, World!" to the console:
+                <br><br>
+                <pre><code id=\"codeBlock\">
+# Welcome to Python
+print("Hello, World!")
+    </code></pre>
+    <h3><br>Output:</h3>
+    <pre><code id=\"codeBlock\">
+Hello, World!
+    </code></pre>
+    <h2>Example: Simple calculation</h2>
+    <p>
+        Here is another example of a Python program that performs a simple calculation:
+        <br><br>
+        <pre><code id=\"codeBlock\">
+# Simple calculation
+a = 5
+b = 10
+c = a + b
+print("The sum of", a, "and", b, "is", c)
+        </code></pre>
+        <h3><br>Output:</h3>
+        <pre><code id=\"codeBlock\">
+The sum of 5 and 10 is 15
+        </code></pre>
+    </p>
+   <h2><br> Python Installation</h2><br>
+
+    <p>
+         To install Python, follow these steps:
+         <br><br>
+         1. Go to the official Python website: https://www.python.org/downloads/
+         <br><br>
+         2. Click on the "Download Python" button for the latest version.
+         <br><br>
+         3. Run the downloaded installer and follow the instructions to complete the installation.
+         <br><br>
+         4. After installation, you can verify that Python is installed correctly by opening a terminal or command prompt and typing:
+         <br><br>
+         <pre><code id=\"codeBlock\">
+python --version
+         </code></pre>
+    </p>
+    <p>
+        <h1>Python Quickstart</h1>
+        <h2>Method 1: Using Command Prompt <br></h2>
+        After installing Python, you can start writing and running Python code. Here are some quick steps to get you started:
+        <br><br>
+        1. Open a terminal or command prompt.
+        <br><br>
+        2. Start the Python interactive shell by typing:
+        <br><br>
+        <pre><code id=\"codeBlock\">
+python
+        </code></pre>
+        3. You can now enter Python code directly into the shell. For example, try typing:
+        <br><br>
+        <pre><code id=\"codeBlock\">
+print("Hello, Python!")
+        </code></pre>
+        4. To exit the Python shell, type:
+        <br><br>    
+        <pre><code id=\"codeBlock\">
+exit()
+        </code></pre>
+        
+        <h2>Method 2: Using a Python File <br></h2>
+        1. Open a text editor (like Notepad, VS Code, or PyCharm) and create a new file named `hello.py`.
+        <br><br>
+        2. Add the following code to the file:
+        <br><br>
+        <pre><code id=\"codeBlock\">    
+# Welcome to Python
+print("Hello, Python!")
+        </code></pre>
+        3. Save the file and close the editor.
+        <br><br>
+        4. Open a terminal or command prompt, navigate to the directory where you saved `hello.py`, and run the script by typing:
+        <br><br>
+        <pre><code id=\"codeBlock\">
+python hello.py
+        </code></pre>   
+        5. You should see the output:
+        <br><br>
+        <pre><code id=\"codeBlock\">
+Hello, Python!
+        </code></pre>
+
+    </p>
+    <p>
+        <h1><br><br>Python Syntax Compared to Other Programming Languages</h1>
+        Python syntax is <b> simpler and shorter </b> than many languages like Java or C++.
+        <br><br>
+        For example, to print "Hello, World!"
+        <br><br>
+        <h3>Python Code</h3>
+        <pre><code id=\"codeBlock\">
+print("Hello, World!")
+        </code></pre>
+        <h3>C++ Code</h3>
+        <pre><code id=\"codeBlock\">
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello, World!";
+    return 0;
+}
+        </code></pre>
+        <h3>Java Code</h3>
+        <pre><code id=\"codeBlock\">    
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }   
+}
+        </code></pre>
+        <h2><br>Key Differences</h2>
+        <ul>
+            <li style="margin-left:40px;">Python uses indentation to define code blocks, while C++ and Java use curly braces.</li>
+            <li style="margin-left:40px;">Python does not require a main function, while C++ and Java do.</li>
+            <li style="margin-left:40px;">Python has a simpler syntax for printing output compared to C++ and Java.</li>
+        </ul>
+        <br><br>
+        Python's simplicity and readability make it an excellent choice for beginners and a powerful tool for experienced
+developers.
+<p>
+    <h2>Summary</h2>
+    In this section, we covered the basics of Python, including its introduction, installation, and quickstart guide. We also compared Python's syntax to other programming languages like C++ and Java, highlighting its simplicity and readability. Python's ease of use and versatility make it a popular choice for a wide range of applications, from web development to data analysis and artificial intelligence.
+    
+</p>
+
+    </p>
+
+
+    <pre><code id=\"codeBlock\">
+# Welcome to Python
+print("Python is awesome!")
+    </code></pre>
+
+</div>
+                </div>
+                
+                <div id="nav-buttons" class="page-navigation"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
