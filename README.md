@@ -48,7 +48,7 @@ The goal of **PythonBasics** is to create a simple and accessible platform where
 Example:
 
 ```
-[[https://username.github.io/PythonBasics/]](https://mrbootcoder.github.io/PythonBasics/)
+https://mrbootcoder.github.io/PythonBasics/
 ```
 
 ---
